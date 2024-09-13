@@ -1,0 +1,63 @@
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: var(--nextui-colors-background);
+  color: var(--nextui-colors-text);
+  border: 1px solid var(--nextui-colors-border);
+  font-family: var(--nextui-fonts-sans);
+  line-height: 1.125em;
+}
+
+.react-calendar__navigation button {
+  color: var(--nextui-colors-primary);
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: var(--nextui-colors-primaryLight);
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: var(--nextui-colors-backgroundContrast);
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: var(--nextui-colors-primaryLight);
+  color: var(--nextui-colors-primaryContrast);
+}
+
+.react-calendar__tile--now {
+  background: var(--nextui-colors-secondary);
+  color: var(--nextui-colors-secondaryContrast);
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: var(--nextui-colors-secondaryLight);
+  color: var(--nextui-colors-secondaryContrast);
+}
+
+.react-calendar__tile--active {
+  background: var(--nextui-colors-primary);
+  color: var(--nextui-colors-primaryContrast);
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: var(--nextui-colors-primaryLight);
+  color: var(--nextui-colors-primaryContrast);
+}
