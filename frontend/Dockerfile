@@ -2,6 +2,10 @@
 FROM node:18-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
+
+# 메모리 한도를 8GB로 증가
+ENV NODE_OPTIONS="--max-old-space-size=8192"
+
 RUN npm install
 COPY . .
 RUN npm run build
